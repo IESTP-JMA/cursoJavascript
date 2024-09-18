@@ -1,4 +1,6 @@
 # Valores, Tipos y Operadores
-- valores (datos)
+## Indice
+- [tipos de datos o valores](#valores)
+## valores
 - tipos (tipos de datos)
 - operadores
