@@ -20,3 +20,13 @@ if(edad >= 18){
 }
 
 console.timeEnd("tiempo de ejecucion")
+
+// mensaje de tipo tabla
+console.table("soy una tabla y edwin el clavo y orlando es virgen")
+lenguajes=[
+    {nombre:"javascript",extension:".js"},
+    {nombre:"python",extension:".py"},
+    {nombre:"php",extension:".php"}
+]
+console.log(lenguajes)
+console.table(lenguajes)
