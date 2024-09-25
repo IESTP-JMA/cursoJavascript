@@ -4,7 +4,7 @@
   - [valores](#valores)
     - [Datos Primitivos](#datos-primitivos)
       - [Numeros(Number)](#numerosnumber)
-      - [Aritmetica](#aritmetica)
+      - [operaciones con numeros](#operaciones-con-numeros)
 ## valores
 Imagina un mar de bits.
 Una computadora moderna tiene mas de 100 mil millones de bits almacenados en su `memoria de trabajo`o`memoria principal`o`memoria volatil`o`ram`.
