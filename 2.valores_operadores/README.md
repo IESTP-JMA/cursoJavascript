@@ -4,6 +4,7 @@
   - [valores](#valores)
     - [Datos Primitivos](#datos-primitivos)
       - [Numeros(Number)](#numerosnumber)
+      - [Aritmetica](#aritmetica)
 ## valores
 Imagina un mar de bits.
 Una computadora moderna tiene mas de 100 mil millones de bits almacenados en su `memoria de trabajo`o`memoria principal`o`memoria volatil`o`ram`.
@@ -53,3 +54,15 @@ infinity
 NaN // not a number
 // cuando el resultado de una operacion es matematicamente imposible.
 ```
+#### Aritmetica
+la principal operacion que se se puede hacer con numeros es la aritmetica.
+para esto tememos los Operadores aritmeticos basicos como:
+- suma (+).
+- resta (-).
+- multiplicacion (*).
+- division (/).
+- potencia (**).
+- modulo (%).
+**podemos agrupar operaciones con parentesis () las operaciones ques este entre los parentesis se ejecutar primero**
+consulta el archivos de operadores [aqui](./operadores.js).
+ve los ejercicios [aqui](./ejercicios.js)
