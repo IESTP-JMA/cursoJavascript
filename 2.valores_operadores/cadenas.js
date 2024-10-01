@@ -28,7 +28,7 @@ console.log("estea es una barra invertida \\")
 console.log("hola"+" "+"mundo")
 console.log("hola "+"mundo")
 
-//usadno plantillas literales
+//usando plantillas literales
 numeroUno=34
 numeroDos=23
 console.log(`la suma de ${numeroUno} + ${numeroDos} es = ${numeroUno+numeroDos}`)

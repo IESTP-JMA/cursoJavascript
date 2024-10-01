@@ -8,6 +8,8 @@
       - [cadenas](#cadenas)
       - [concatenacion](#concatenacion)
       - [plantillas literales](#plantillas-literales)
+      - [Operadores unarios](#operadores-unarios)
+      - [Balores boleanos](#valores-boleanos)
 ## valores
 Imagina un mar de bits.
 Una computadora moderna tiene mas de 100 mil millones de bits almacenados en su `memoria de trabajo`o`memoria principal`o`memoria volatil`o`ram`.
@@ -134,6 +136,31 @@ la siguiente expresion `${}`.
 //usando js dentro de un plantilla literal
 `la suma de 1+1 es ${1+1}`
 ```
-
 > [!TIP]
 > Se dice literal por que con el formato que codificamos sera mostrado de esa misma forma en la consola
+
+#### Operadores Unarios
+No todos lo operadores son simbolos, algunos se escrien como palabras.
+Un ejemplo es el operador `typeof`, es operador produce un valor de cadena que indica el tipo del valor que le proporcionamos.
+
+`operadore binarios` se les conoce por que operar sobre dos valores `2*5`
+`operador unario` por que solo trabaja con un valor.
+
+```js
+//para poder ver su funcionalidad o el valor que genera siempre debemos mostrarlo en un console
+console.log(typeof 5)
+```
+#### Valores Boleanos
+este tipo de dato primitivo es util cuando tenemos un valor que distinga solo entre dos posibilidades, como `si` y `no` o `encendido` y `apagado`.
+Para este proposito, JavaScript tiene un tipo de dato `Booleano`, que tiene solo dos valores, `true` y `false`.
+**que formas de producir valores booleanos tenemos?**
+1. **Usando operadores de comparacion**
+   los operadores de compracion son los siguientes
+   - Mayor que(>).
+   - Menor que(<).
+   - Mayor o igual que(>=).
+   - Menor o igual que(<=).
+   - Igual a (==).
+   - Extrictamente igual (===).
+   - No es igual a (!=)
+2. 
