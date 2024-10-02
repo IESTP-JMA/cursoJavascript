@@ -170,4 +170,20 @@ Para este proposito, JavaScript tiene un tipo de dato `Booleano`, que tiene solo
    - and (y) representacion en javascript `&&`,
    - or (o) representacion en javascript `||`,
    - not (no) representacion en js `!`, **Observacion** este es un operador unario que su funcion es invertir el valor que tiene a su derecha `!true` produce `false`
-   
+> [!TIP]
+> **AND-`&&` o `??`**-Si tenemos dos valores verdaderos devolvera el segundo valor verdadero, si tenemos un valor falso y uno verdadero devolvera el valor falso en cualquier posicion que se encuentre.
+
+> [!TIP]
+> **OR-`||`**-Si tenemos dos valores verdaderos devolvera el primer valor verdadero, si tenemos un valor verdadero y uno falso devolvera el valor verdadero en cual quier posicion que se encuentre.
+3. **Usando el operador relacional**
+   Este operador compara sus valores y retorna un boleano como resultado, lo que evalua este operador es si una propiedad especifica se encunetra en un objeto.
+   Evalua que si primer valor que se encuentra a la izquierda existe o forma parte del segundo valor que se encuentra a su derecha.
+  ```js
+  "a" in ["a","e"."i","o","u"]
+  ```
+#### Operador Ternario
+Este operador trabaja con tres valores, el primer valor es el que determinara si se muestran el resto de valores, eso quiere decir que si el primer valor es verdadero mostrara el segundo valor, mientras que si es falso mostrara el tercer valor.
+
+```js
+
+```
