@@ -68,6 +68,8 @@ para esto tememos los Operadores aritmeticos basicos como:
 - division (/).
 - potencia (**).
 - modulo (%).
+- incremento (++).
+- decremento (--).
 **podemos agrupar operaciones con parentesis () las operaciones ques este entre los parentesis se ejecutar primero**
 consulta el archivos de operadores [aqui](./operadores.js).
 ve los ejercicios [aqui](./ejercicios.js)
