@@ -165,4 +165,9 @@ Para este proposito, JavaScript tiene un tipo de dato `Booleano`, que tiene solo
    - Igual a (==).
    - Extrictamente igual (===).
    - No es igual a (!=)
-2. 
+2. **Usando los Operadores Logicos**
+   JavaScript soporta tres operadores logicos
+   - and (y) representacion en javascript `&&`,
+   - or (o) representacion en javascript `||`,
+   - not (no) representacion en js `!`, **Observacion** este es un operador unario que su funcion es invertir el valor que tiene a su derecha `!true` produce `false`
+   
