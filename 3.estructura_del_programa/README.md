@@ -1,7 +1,10 @@
-# Estrcutra del programa
+# Estructura del programa
 ## Indice
 - [interaccion con el usuario](#interaccion-basica-con-el-usuario)
 - [declaraciones y expresiones](#expresiones-y-declaraciones)
+- [bindings o enlaces](#bindings-enlaces)
+- [El Entorno](#el-entorno)
+- [control de flujo](#control-de-fujo)
 ## interaccion basica con el usuario
 Podemos interactuar con el usuario desde JavaScript, utilizando un metodo sencillo que biene implementado en los navegadores.
 el metodo es conosido como `Window` o el metodo de ventana este metodo en realidad es un objeto que contiene o almacena varias funciones entre ellas las de mostrar mensajes o pedir datos al usuario.
@@ -35,3 +38,44 @@ respuesta=window.promot("como te llamas")
 !true;
 let estado=!false;
 ```
+## Bindings (enlaces)
+cuando creamos un valor estos valores son volatiles solo exiten en la ejecucion del programa y solo cuando son llamados.
+el bingings o enlace es la manera que javascript recuerda los valores y mantiene un estada interno asi como la reutilizacion de valores.
+**como usamos los bingings en javascript**.
+para usar el bindings primero debemo usar la palabra reservada o `keyword` de nombre `let`, despues debemos darle un nombre para identificar el enlace luego asignarle el valor.
+```js
+// este es un enlace que puede apuntar a varios valores
+//como un pulpito como muchos brazitos
+let edadPersona = 34
+
+//si deseamos que nuesto enlace solo apunte a un valor osea un pulpito con un bracit entonces para crear este enlace debemos hacer uso de la keywor const
+const edad=45
+//este enlace siempre apuntara al valor 45 no podra modifcar su enlace a otro valor
+```
+
+> [!NOTE]
+> **Que nombre ponerle a nuestro Enlaces** - el nombre de un enlace debera describir el valor al que esta enlasado, y debera estar escrita en `camelCase`
+
+```js
+//quiero crear un elace que tenga el valor de la fecha actual
+//incorrecto
+let yyyymmdd="20240910"
+// correcto
+let fechaActual="09-10-2024"
+// corecto
+let edadActualAlumno=34
+```
+## El Entorno
+el entorno es conocido como el momento en el que se ejecuta o inicia un archivo javascrip.
+el entorno al crearce no se crea vacio dentro del entorno se crearan la coleccion de enlaces y valores.
+**Tarea** - Averiguar mas sobre la ejecucion en linea de los entornos en javascrip
+## Control de fujo
+Una sentencia se ejecuta como si fuera una historia de arriba abajo.
+por ejemplo:
+```js
+let elNumero = Number(prompt("Elige un numero"))
+console.log(`tu numero es la raiz cuadrada de: ${elNumero*elNumero}`)
+//primero le pide al usuario un numero y despues muestra un menaje y el cuadro de ese numero
+```
+### Ejecucion Condicional
+Hacemos uso de este control de flujo cuando tenemos distintos caminos o distintos mensajes que deseamos mostrar segun una condicion.
