@@ -116,7 +116,22 @@ else if (total_compra >= 100 && total_compra <500){
 }else{
   console.log(`tienes un descuento del 50% ${total_compra*0.50}`)
 }
-
+```
+- **condicion multiple `switch`**
+javascript dispone de una opcion para crear estructuras condicionales mulitples. `switch` permite crear estructurs mas optimizadas para cubrir un amplio abanico de posibilidades.
+```js
+let edad=Number(prompt("ingrese su edad"))
+switch (edad){
+  case 4:
+    console.log("tienes 4 años")
+    break
+  case 8:
+    console.log("tienes 8 años")
+    break
+  default:
+    console.log("tienes:",edad)
+    break
+}
 ```
 ### Bucles
 Consideremos el siguiente problema
