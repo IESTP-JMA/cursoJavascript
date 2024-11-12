@@ -151,7 +151,7 @@ despedida()
 ```
 ## La pila de llamadas
 Es una tecnica que se usa para controlar de manera correcta la ejecucion de una funcion.
--**tarea** averiguar sobre FLIFO, es un algoritmo de estructura de datos, tecnica para ordenar una pila de lamadas, last in first out
+-**tarea** averiguar sobre LIFO, es un algoritmo de estructura de datos, tecnica para ordenar una pila de lamadas, last in first out
 ```js
 //programa 
 function cortarTomate() {
@@ -179,3 +179,53 @@ function comer() {
 }
 comer()
 ```
+## CLOSURE o Funciones de Cierre(Funciones que retorna funciones)
+Un `closure` es una funcion que encapsula una serie de variables y definiciones locales que unicamente seran accesibles si son devueltas con el keyword `return`.
+antes de que aparesca la version `ecma 6` los `closure` eran un patron creacional que nops permitia modulararizar nuestro codigo, en lugar de usar las `clases`, que eran populares en otros lenguajes pero que javascript aun no lo implementaba.
+```javascript
+//una funcion que retorna otra funcion(por lo general es una funcion anonima)
+//funcion clasica
+function retornaValor(n){
+  return n+1
+}
+//llamando a la funcion clasica
+retornaValor(10)
+
+//funcion closure
+fucntion retornaValor(n){
+  return function(){
+    return n+1
+  }
+}
+//lamando a la funcion closure
+retornaValor(10)()
+```
+> [!NOTE]
+> Las funciones `closure` son usadas por que pueden mantener el valor de sus enlaces o variables locales en todo el proceso de la ejecucion de su funcion padre por cada llamada que se le realize.
+
+### Closure Tipo Clase
+son funciones cuyo uso son iguales a las clases dentro de la ejecucion de una clase tenemos lo que se llama como `instancia` en javascript tenemos funciones `closure` que se pueden instanciar al igual que una clase, la diferencia con la funciones `closure` clasicas es que en esta hacemos uso de la palabra reservada `keyword` llama `this`.
+```javascript
+function contador(){
+  this.contador=0
+  this.incre=function(){
+    this.contador++
+  }
+  this.decre=function(){
+    this.contador--
+  }
+}
+//realizamos la instancia
+let count1=new contador()
+count1.contador
+for(let i=0;i<5;i++){
+  count1.incre()
+}
+```
+> [!NOTE]
+> la funcion closure de tipo clase no hace uso de `return` en sus funciones al hacer uso de `this` casa funcion o variable estara enlazada al objeto que se cree
+
+> [!WARNING]
+> El problema principal de este tipo de funcion, es que cuando creamos un nuevo objeto a partir de la funcion tipo clase, reservara espacion en memoria para toda la clase y sus valor creados eso quiere decir variable y funciones, cada vez que llamos a un funcion esta se replica en memoria.
+
+### prototype (Tarea- averiguar y sus ejemplos)
